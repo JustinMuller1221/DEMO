@@ -7,7 +7,7 @@
       "String": "Vend Num",
       "String2": null,
       "String3": null,
-      "LockedBy": null,
+      "LockedBy": "sa",
       "Description": "Todd doesn\u0027t like vendors either"
     }
   ]
