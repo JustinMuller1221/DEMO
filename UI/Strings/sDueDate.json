@@ -2,13 +2,13 @@
   "Strings": [
     {
       "Name": "sDueDate",
-      "ScopeType": 0,
+      "ScopeType": 1,
       "ScopeName": "[NULL]",
       "String": "Due Date",
       "String2": null,
       "String3": null,
-      "LockedBy": null,
-      "Description": null
+      "LockedBy": "sa",
+      "Description": "Due date smu date"
     }
   ]
 }
