@@ -1,10 +1,14 @@
 ﻿{
-  "Name": "sCustNum",
-  "ScopeType": 1,
-  "ScopeName": "[NULL]",
-  "String": "Trouble Makers",
-  "String2": null,
-  "String3": null,
-  "LockedBy": "sa",
-  "Description": "Todd told me do it. Or did he?"
+  "Strings": [
+    {
+      "Name": "sCustNum",
+      "ScopeType": 1,
+      "ScopeName": "[NULL]",
+      "String": "Trouble Makers",
+      "String2": null,
+      "String3": null,
+      "LockedBy": "sa",
+      "Description": "Todd told me do it. Or did he? It was him!"
+    }
+  ]
 }
