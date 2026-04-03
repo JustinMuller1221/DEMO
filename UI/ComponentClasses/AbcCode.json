@@ -15,7 +15,7 @@
   "MaxCharacters": 0,
   "ValidateImmediately": true,
   "ValueIsListIndex": false,
-  "Description": "I gonna mess with this! Even harder.",
+  "Description": "I gonna mess with this!",
   "LockedBy": "sa",
   "DataType": null,
   "EventToGenerate": null,
