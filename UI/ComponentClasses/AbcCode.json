@@ -1,6 +1,6 @@
 ﻿{
   "PropertyName": "AbcCode",
-  "ScopeType": 0,
+  "ScopeType": 1,
   "ScopeName": "[NULL]",
   "IsPropertyClassExtension": 0,
   "Flags": 0,
@@ -15,8 +15,8 @@
   "MaxCharacters": 0,
   "ValidateImmediately": true,
   "ValueIsListIndex": false,
-  "Description": null,
-  "LockedBy": null,
+  "Description": "I gonna mess with this!",
+  "LockedBy": "sa",
   "DataType": null,
   "EventToGenerate": null,
   "SelectionEventToGenerate": null,
