@@ -1,35 +1,35 @@
 ﻿{
-  "ID": 21501,
-  "ScopeType": 0,
+  "ID": 28395,
+  "ScopeType": 1,
   "ScopeName": "[NULL]",
   "Component": null,
   "Name": "BillingTerms",
-  "SubComponent": "",
+  "SubComponent": null,
   "Type": 0,
   "Caption": "fBillingTerms",
   "PrimaryDataSource": "SL.SLTerms( RLAS() )",
   "StandardOperations": 1019,
   "TopPos": 0.000000000000000e+000,
   "LeftPos": 0.000000000000000e+000,
-  "Height": 2.879999923706050e+001,
+  "Height": 2.879999923706055e+001,
   "Width": 1.090000000000000e+002,
   "IconFileName": "FORMICON() FORMWALLPAPER()",
   "HelpFileName": "default.html?helpcontent=mergedProjects/sl_custvend/forms/cotopics/billing_terms.htm",
   "HelpContextID": -1,
   "Flags": 202,
-  "LockedBy": null,
+  "LockedBy": "sa",
   "FilterFormSpec": "BillingTermsQuery",
   "PaneZeroSize": "17.714285714285715",
-  "Description": null,
+  "Description": "Another monster test",
   "MasterDeviceID": 0,
   "BaseFormName": null,
   "LayoutAttributes": null,
   "ActiveXComponentProperties": [],
   "Variables": [
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "cds_DataSourceSLTermsSeqGrid",
-      "ScopeType": 0,
+      "ScopeType": 1,
       "ScopeName": "[NULL]",
       "Value": "object.SLTermsSeqs( CA(DIVNORS) LINKBY(TermsCode=TermsCode) )",
       "Value2": null,
@@ -38,9 +38,9 @@
       "Description": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "cds_DataSourceSLTermsSeqsGrid",
-      "ScopeType": 0,
+      "ScopeType": 1,
       "ScopeName": "[NULL]",
       "Value": "object.SLTermsSeqs( CA(DIVORS) OBJNAME(oTermsSequence) ORDERBY(UserSeq) LINKBY(TermsCode=TermsCode) )",
       "Value2": null,
@@ -49,9 +49,9 @@
       "Description": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "cds_DataSourceTermsSequenceGrid",
-      "ScopeType": 0,
+      "ScopeType": 1,
       "ScopeName": "[NULL]",
       "Value": "object.SLTermsSeqs( CA(DIVNORS) LINKBY(TermsCode=TermsCode) )",
       "Value2": null,
@@ -60,9 +60,9 @@
       "Description": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "cew_CashOnlyEdit",
-      "ScopeType": 0,
+      "ScopeType": 1,
       "ScopeName": "[NULL]",
       "Value": "Visible:#C(CashOnlyEdit), #V(LocalCashRound) \u003C\u003E 0, \u0022True\u0022",
       "Value2": null,
@@ -71,9 +71,9 @@
       "Description": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "cew_CashOnlyGridCol",
-      "ScopeType": 0,
+      "ScopeType": 1,
       "ScopeName": "[NULL]",
       "Value": "Visible:#C(CashOnlyGridCol), #V(LocalCashRound) \u003C\u003E 0, \u0022True\u0022",
       "Value2": null,
@@ -82,9 +82,9 @@
       "Description": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "cew_ProxCodeEdit",
-      "ScopeType": 0,
+      "ScopeType": 1,
       "ScopeName": "[NULL]",
       "Value": "Enabled:#C(ProxCodeEdit), #P(Advanced) \u003C\u003E 0, \u0022True\u0022",
       "Value2": null,
@@ -93,9 +93,9 @@
       "Description": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "cew_ProxCodeGridCol",
-      "ScopeType": 0,
+      "ScopeType": 1,
       "ScopeName": "[NULL]",
       "Value": "Enabled:#C(ProxCodeGridCol), #P(Advanced) \u003C\u003E 0, \u0022True\u0022",
       "Value2": null,
@@ -104,9 +104,9 @@
       "Description": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "cew_TaxDiscEdit",
-      "ScopeType": 0,
+      "ScopeType": 1,
       "ScopeName": "[NULL]",
       "Value": "Visible:#C(TaxDiscEdit), #V(LocalPromptTaxDisc) \u003C\u003E 0, \u0022True\u0022",
       "Value2": null,
@@ -115,9 +115,9 @@
       "Description": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "cew_TaxDiscGridCol",
-      "ScopeType": 0,
+      "ScopeType": 1,
       "ScopeName": "[NULL]",
       "Value": "Visible:#C(TaxDiscGridCol), #V(LocalPromptTaxDisc) \u003C\u003E 0, \u0022True\u0022",
       "Value2": null,
@@ -126,9 +126,9 @@
       "Description": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "cew_TaxDiscStatic",
-      "ScopeType": 0,
+      "ScopeType": 1,
       "ScopeName": "[NULL]",
       "Value": "Visible:#C(TaxDiscStatic), #V(LocalPromptTaxDisc) \u003C\u003E 0, \u0022True\u0022",
       "Value2": null,
@@ -137,9 +137,9 @@
       "Description": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "cvw_TaxDiscEdit",
-      "ScopeType": 0,
+      "ScopeType": 1,
       "ScopeName": "[NULL]",
       "Value": "Visible:#C(TaxDiscEdit), #V(LocalPromptTaxDisc) \u003C\u003E 0, \u0022True\u0022",
       "Value2": null,
@@ -148,9 +148,9 @@
       "Description": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "InitialCommand",
-      "ScopeType": 0,
+      "ScopeType": 1,
       "ScopeName": "[NULL]",
       "Value": "FilterInPlace",
       "Value2": null,
@@ -161,7 +161,7 @@
   ],
   "FormEventHandlers": [
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "AdvancedChanged",
       "Sequence": 0,
       "ResponseType": 35,
@@ -172,7 +172,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "DataChangeTermsPercentSubCol",
       "Sequence": 0,
       "ResponseType": 35,
@@ -183,7 +183,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "GetParms",
       "Sequence": 0,
       "ResponseType": 0,
@@ -194,7 +194,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "GetParms",
       "Sequence": 1,
       "ResponseType": 0,
@@ -205,7 +205,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "MultipleDueDateChanged",
       "Sequence": 0,
       "ResponseType": 35,
@@ -216,7 +216,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "MultipleDueDateChanged",
       "Sequence": 1,
       "ResponseType": 35,
@@ -227,7 +227,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "MultipleDueDateChangedCheckBoxClick",
       "Sequence": 0,
       "ResponseType": 21,
@@ -238,7 +238,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "MultipleDueDateChangedCheckBoxClick",
       "Sequence": 1,
       "ResponseType": 35,
@@ -249,7 +249,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "PercentChange",
       "Sequence": 0,
       "ResponseType": 35,
@@ -260,7 +260,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "SetLowestUserSeq()",
       "Sequence": 0,
       "ResponseType": 35,
@@ -271,7 +271,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "SetUserSequence",
       "Sequence": 0,
       "ResponseType": 35,
@@ -282,7 +282,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "StdFormCopy",
       "Sequence": 0,
       "ResponseType": 21,
@@ -293,7 +293,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "StdFormCopyCompleted",
       "Sequence": 0,
       "ResponseType": 8,
@@ -304,7 +304,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "StdFormFirst",
       "Sequence": 0,
       "ResponseType": 21,
@@ -315,7 +315,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "StdFormPerformValidations",
       "Sequence": 0,
       "ResponseType": 35,
@@ -326,7 +326,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "StdFormPredisplay",
       "Sequence": 0,
       "ResponseType": 21,
@@ -337,7 +337,7 @@
       "ABData": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "EventName": "StdObjectSelectCurrentCompleted",
       "Sequence": 0,
       "ResponseType": 35,
@@ -350,7 +350,7 @@
   ],
   "FormComponents": [
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "AdvancedEdit",
       "TabOrder": 32,
       "Type": 5,
@@ -390,13 +390,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ListYesNo",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sAdvancedTerms",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "AdvancedGridCol",
       "TabOrder": 14,
       "Type": 15,
@@ -436,13 +436,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ListYesNo",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sAdvancedTerms",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "AdvancedTermsBox",
       "TabOrder": 31,
       "Type": 6,
@@ -482,13 +482,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": null,
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "CashOnlyEdit",
       "TabOrder": 18,
       "Type": 5,
@@ -534,7 +534,7 @@
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "CashOnlyGridCol",
       "TabOrder": 9,
       "Type": 15,
@@ -580,7 +580,7 @@
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "CutoffDayEdit",
       "TabOrder": 13,
       "Type": 1,
@@ -620,13 +620,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "CutoffDay",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "C(CutoffDayStatic)",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "CutoffDayGridCol",
       "TabOrder": 6,
       "Type": 15,
@@ -666,13 +666,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "CutoffDay",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sCutoffDay",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "CutoffDayStatic",
       "TabOrder": 12,
       "Type": 0,
@@ -712,13 +712,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sCutoffDay",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DerDiscDaysEditHidden",
       "TabOrder": 30,
       "Type": 1,
@@ -758,13 +758,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "DiscDays",
       "Post301DataType": "DEFAULTVALUE(0)",
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sDiscountDays",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DerDiscPctEditHidden",
       "TabOrder": 27,
       "Type": 1,
@@ -804,13 +804,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ApDisc",
       "Post301DataType": "DEFAULTVALUE(0)",
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sDiscountPercent",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DerProxDiscountDayEdit",
       "TabOrder": 21,
       "Type": 1,
@@ -850,13 +850,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ProxDiscDay",
       "Post301DataType": "DEFAULTVALUE(0)",
-      "Post301Format": "AUTOIME(NoControl) MASK(ZZ) JUSTIFY(R) BTF()",
+      "Post301Format": "MASK(ZZ) JUSTIFY(R) BTF()",
       "Description": null,
       "EffectiveCaption": "C(ProxDiscountDayStatic)",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DerProxDiscountMonthsForwardEdit",
       "TabOrder": 24,
       "Type": 1,
@@ -896,13 +896,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ProxDiscMonthToForward",
       "Post301DataType": "DEFAULTVALUE(0)",
-      "Post301Format": "AUTOIME(NoControl) MASK(ZZ) JUSTIFY(R) BTF()",
+      "Post301Format": "MASK(ZZ) JUSTIFY(R) BTF()",
       "Description": null,
       "EffectiveCaption": "C(ProxDiscountMonthsForwardStatic)",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DerUseMultipleDueDates",
       "TabOrder": 39,
       "Type": 5,
@@ -942,13 +942,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ListYesNo",
       "Post301DataType": "DEFAULTVALUE(0)",
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sMultipleDueDates",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DescriptionEdit",
       "TabOrder": 4,
       "Type": 1,
@@ -988,13 +988,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "Description",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sDescription",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DescriptionGridCol",
       "TabOrder": 2,
       "Type": 15,
@@ -1034,13 +1034,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "Description",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sDescription",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DiscDaysEdit",
       "TabOrder": 17,
       "Type": 1,
@@ -1080,13 +1080,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "DiscDays",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "C(DiscDaysStatic)",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DiscDaysGridCol",
       "TabOrder": 8,
       "Type": 15,
@@ -1126,13 +1126,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "DiscDays",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sDiscountDays",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DiscDaysStatic",
       "TabOrder": 16,
       "Type": 0,
@@ -1172,13 +1172,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sDiscountDays",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DiscPctEdit",
       "TabOrder": 26,
       "Type": 1,
@@ -1218,13 +1218,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ApDisc",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "C(DiscPctStatic)",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DiscPctGridCol",
       "TabOrder": 12,
       "Type": 15,
@@ -1264,13 +1264,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ApDisc",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sDiscountPercent",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DiscPctStatic",
       "TabOrder": 25,
       "Type": 0,
@@ -1310,13 +1310,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sDiscountPercent",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DueDaysEdit",
       "TabOrder": 7,
       "Type": 1,
@@ -1356,13 +1356,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "DueDays",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "C(DueDaysStatic)",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DueDaysGridCol",
       "TabOrder": 3,
       "Type": 15,
@@ -1402,13 +1402,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "DueDays",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sDueDays",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "DueDaysStatic",
       "TabOrder": 6,
       "Type": 0,
@@ -1448,13 +1448,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sDueDays",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "FormCollectionGrid",
       "TabOrder": 0,
       "Type": 14,
@@ -1494,13 +1494,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": null,
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "GroupBox1",
       "TabOrder": 1,
       "Type": 6,
@@ -1540,13 +1540,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": null,
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "GroupBox2",
       "TabOrder": 5,
       "Type": 6,
@@ -1586,13 +1586,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": null,
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "HolidayOffsetMethodEdit",
       "TabOrder": 15,
       "Type": 27,
@@ -1632,13 +1632,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "HolidayOffsetMethod",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) MASK([NONE])",
+      "Post301Format": "MASK([NONE])",
       "Description": null,
       "EffectiveCaption": "C(HolidayOffsetMethodStatic)",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "HolidayOffsetMethodGridCol",
       "TabOrder": 7,
       "Type": 15,
@@ -1678,13 +1678,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "HolidayOffsetMethod",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sHolidayOffsetMethod",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "HolidayOffsetMethodStatic",
       "TabOrder": 14,
       "Type": 0,
@@ -1724,13 +1724,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sHolidayOffsetMethod",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "MultipleDueDateEdit",
       "TabOrder": 36,
       "Type": 5,
@@ -1770,13 +1770,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ListYesNo",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sUseMultipleDueDates",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "MultipleDueDateGridCol",
       "TabOrder": 16,
       "Type": 15,
@@ -1816,13 +1816,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ListYesNo",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sUseMultipleDueDates",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "MultipleDueDatesBox",
       "TabOrder": 35,
       "Type": 6,
@@ -1862,13 +1862,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": null,
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "ProxCodeEdit",
       "TabOrder": 34,
       "Type": 1,
@@ -1914,7 +1914,7 @@
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "ProxCodeGridCol",
       "TabOrder": 15,
       "Type": 15,
@@ -1960,7 +1960,7 @@
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "ProxCodeStatic",
       "TabOrder": 33,
       "Type": 0,
@@ -2000,13 +2000,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sProxCode",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "ProxDayEdit",
       "TabOrder": 9,
       "Type": 1,
@@ -2046,13 +2046,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ProxDay",
       "Post301DataType": "DEFAULTVALUE(0)",
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "C(ProxDayStatic)",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "ProxDayGridCol",
       "TabOrder": 4,
       "Type": 15,
@@ -2092,13 +2092,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ProxDay",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sProxDueDay",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "ProxDayStatic",
       "TabOrder": 8,
       "Type": 0,
@@ -2138,13 +2138,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sProxDueDay",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "ProxDiscDayGridCol",
       "TabOrder": 10,
       "Type": 15,
@@ -2184,13 +2184,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ProxDiscDay",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) MASK(ZZ) JUSTIFY(R)",
+      "Post301Format": "MASK(ZZ) JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sProxDiscountDay",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "ProxDiscMonthToForwardGridCol",
       "TabOrder": 11,
       "Type": 15,
@@ -2230,13 +2230,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ProxDiscMonthToForward",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) MASK(ZZ) JUSTIFY(R)",
+      "Post301Format": "MASK(ZZ) JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sProxDiscountMonthsForward",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "ProxDiscountDayEdit",
       "TabOrder": 20,
       "Type": 1,
@@ -2276,13 +2276,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ProxDiscDay",
       "Post301DataType": "DEFAULTVALUE(0)",
-      "Post301Format": "AUTOIME(NoControl) MASK(ZZ) JUSTIFY(R)",
+      "Post301Format": "MASK(ZZ) JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "C(ProxDiscountDayStatic)",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "ProxDiscountDayStatic",
       "TabOrder": 19,
       "Type": 0,
@@ -2322,13 +2322,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sProxDiscountDay",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "ProxDiscountMonthsForwardEdit",
       "TabOrder": 23,
       "Type": 1,
@@ -2368,13 +2368,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ProxDiscMonthToForward",
       "Post301DataType": "DEFAULTVALUE(0)",
-      "Post301Format": "AUTOIME(NoControl) MASK(ZZ) JUSTIFY(R)",
+      "Post301Format": "MASK(ZZ) JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "C(ProxDiscountMonthsForwardStatic)",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "ProxDiscountMonthsForwardStatic",
       "TabOrder": 22,
       "Type": 0,
@@ -2414,13 +2414,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sProxDiscountMonthsForward",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "ProxMonthsForwardEdit",
       "TabOrder": 11,
       "Type": 1,
@@ -2460,13 +2460,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ProxMonthToForward",
       "Post301DataType": "DEFAULTVALUE(0)",
-      "Post301Format": "AUTOIME(NoControl) MASK(ZZ) JUSTIFY(R)",
+      "Post301Format": "MASK(ZZ) JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "C(ProxMonthsForwardStatic)",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "ProxMonthsForwardGridCol",
       "TabOrder": 5,
       "Type": 15,
@@ -2506,13 +2506,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "ProxMonthToForward",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) MASK(ZZ) JUSTIFY(R)",
+      "Post301Format": "MASK(ZZ) JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sProxMonthsForward",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "ProxMonthsForwardStatic",
       "TabOrder": 10,
       "Type": 0,
@@ -2552,13 +2552,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sProxMonthsForward",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "SLTermsSeqDueDaysOffsetSubGridCol",
       "TabOrder": 27,
       "Type": 15,
@@ -2598,13 +2598,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "DueDays",
       "Post301DataType": "DEFAULTVALUE(0)",
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sDueDaysOffset",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "SLTermsSeqSeqSubGridCol",
       "TabOrder": 29,
       "Type": 15,
@@ -2644,13 +2644,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "Sequence",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sSequence",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "SLTermsSeqSequenceSubGridCol",
       "TabOrder": 26,
       "Type": 15,
@@ -2690,13 +2690,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "Sequence",
       "Post301DataType": "DEFAULTVALUE(AUTONUMBER(STEP(10) FILTER(TermsCode=FP(TermsCode))) )",
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sSequence",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "SLTermsSeqsGrid",
       "TabOrder": 41,
       "Type": 14,
@@ -2736,13 +2736,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": null,
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "SLTermsSeqTermsPercentSubGridCol",
       "TabOrder": 28,
       "Type": 15,
@@ -2782,13 +2782,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "PercentDecimal",
       "Post301DataType": "DEFAULTVALUE(0.00)",
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sPercent",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "TaxDiscEdit",
       "TabOrder": 29,
       "Type": 1,
@@ -2834,7 +2834,7 @@
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "TaxDiscGridCol",
       "TabOrder": 13,
       "Type": 15,
@@ -2880,7 +2880,7 @@
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "TaxDiscStatic",
       "TabOrder": 28,
       "Type": 0,
@@ -2926,7 +2926,7 @@
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "TermsCodeEdit",
       "TabOrder": 3,
       "Type": 1,
@@ -2966,13 +2966,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "TermsCodeBase",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "C(TermsCodeStatic)",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "TermsCodeGridCol",
       "TabOrder": 1,
       "Type": 15,
@@ -3012,13 +3012,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "TermsCodeBase",
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sCode",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "TermsCodeStatic",
       "TabOrder": 2,
       "Type": 0,
@@ -3058,13 +3058,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sCode",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "TermsSeqGroupBox",
       "TabOrder": 40,
       "Type": 6,
@@ -3104,13 +3104,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": null,
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "TotalPercentEdit",
       "TabOrder": 38,
       "Type": 1,
@@ -3150,13 +3150,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "PercentDecimal",
       "Post301DataType": "DEFAULTVALUE(0.00)",
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "C(TotalPercentStatic)",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "TotalPercentGridCol",
       "TabOrder": 17,
       "Type": 15,
@@ -3196,13 +3196,13 @@
       "ActiveXControlName": null,
       "PropertyClassName": "PercentDecimal",
       "Post301DataType": "DEFAULTVALUE(0.00)",
-      "Post301Format": "AUTOIME(NoControl)",
+      "Post301Format": "",
       "Description": null,
       "EffectiveCaption": "sTotalPercent",
       "LayoutAttributes": null
     },
     {
-      "FormID": 21501,
+      "FormID": 28395,
       "Name": "TotalPercentStatic",
       "TabOrder": 37,
       "Type": 0,
@@ -3242,7 +3242,7 @@
       "ActiveXControlName": null,
       "PropertyClassName": null,
       "Post301DataType": null,
-      "Post301Format": "AUTOIME(NoControl) JUSTIFY(R)",
+      "Post301Format": "JUSTIFY(R)",
       "Description": null,
       "EffectiveCaption": "sTotalPercent",
       "LayoutAttributes": null
@@ -3253,7 +3253,7 @@
   "ActiveXScripts": [
     {
       "Name": "BillingTerms",
-      "ScopeType": 0,
+      "ScopeType": 1,
       "ScopeName": "[NULL]",
       "LockedBy": null,
       "Language": "Visual Basic",
