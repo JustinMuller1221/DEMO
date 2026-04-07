@@ -1,6 +1,6 @@
-CREATE   PROCEDURE VDG_SM_AAAIamLowleyProcThatHasNoPurpose
+CREATE PROCEDURE VDG_SM_AAAIamLowleyProcThatHasNoPurpose
 AS
 BEGIN
-	-- Here I stand with no purpose.
-	PRINT 'I have no purpose'
+	-- I am mighty now - I have a purpose!
+	PRINT 'My Purpose now is mighty!'
 END
