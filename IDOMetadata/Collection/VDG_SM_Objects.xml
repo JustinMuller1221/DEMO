@@ -1,0 +1,174 @@
+﻿<ObjectStudioExport Version="060000">
+  <IDODefinitions>
+    <IDODefinition Name="VDG_SM_Objects">
+      <ServerName>VDG</ServerName>
+      <AccessAs>BaseSyteLine</AccessAs>
+      <LabelStringID>oVDG_SM_Objects</LabelStringID>
+      <RevisionNo>5</RevisionNo>
+      <RevisionDate>2026-03-13T13:03:23</RevisionDate>
+      <ReplaceFlag>0</ReplaceFlag>
+      <QuoteTableAliases>0</QuoteTableAliases>
+      <Tables>
+        <Table Name="VDG_SM_Object" Alias="obj" Type="PRIMARY" />
+      </Tables>
+      <Methods />
+      <Properties>
+        <Property Name="AdditionalJson" Key="0" Binding="BOUND" Sequence="15">
+          <PseudoKeyFlag>0</PseudoKeyFlag>
+          <BoundToColumn>AdditionalJson</BoundToColumn>
+          <ColumnTableAlias>obj</ColumnTableAlias>
+          <PropertyAttributes>
+            <ColumnDataType>nvarchar</ColumnDataType>
+            <DataLength>-1</DataLength>
+            <DataType>String</DataType>
+            <IsRequired>0</IsRequired>
+          </PropertyAttributes>
+        </Property>
+        <Property Name="AdditionalXml" Key="0" Binding="BOUND" Sequence="15">
+          <PseudoKeyFlag>0</PseudoKeyFlag>
+          <BoundToColumn>AdditionalXml</BoundToColumn>
+          <ColumnTableAlias>obj</ColumnTableAlias>
+          <PropertyAttributes>
+            <ColumnDataType>xml</ColumnDataType>
+          </PropertyAttributes>
+        </Property>
+        <Property Name="CreateDate" Key="0" Binding="BOUND" Sequence="3">
+          <PseudoKeyFlag>0</PseudoKeyFlag>
+          <BoundToColumn>CreateDate</BoundToColumn>
+          <ColumnTableAlias>obj</ColumnTableAlias>
+          <PropertyAttributes>
+            <ColumnDataType>CurrentDateType</ColumnDataType>
+            <DataType>Date</DataType>
+            <IsReadOnly>1</IsReadOnly>
+          </PropertyAttributes>
+        </Property>
+        <Property Name="CreatedBy" Key="0" Binding="BOUND" Sequence="1">
+          <PseudoKeyFlag>0</PseudoKeyFlag>
+          <BoundToColumn>CreatedBy</BoundToColumn>
+          <ColumnTableAlias>obj</ColumnTableAlias>
+          <PropertyAttributes>
+            <ColumnDataType>UsernameType</ColumnDataType>
+            <DataLength>128</DataLength>
+            <DataType>String</DataType>
+            <IsReadOnly>1</IsReadOnly>
+          </PropertyAttributes>
+        </Property>
+        <Property Name="InWorkflow" Key="0" Binding="BOUND" Sequence="7">
+          <PseudoKeyFlag>0</PseudoKeyFlag>
+          <BoundToColumn>InWorkflow</BoundToColumn>
+          <ColumnTableAlias>obj</ColumnTableAlias>
+          <PropertyAttributes>
+            <ColumnDataType>FlagNyType</ColumnDataType>
+            <DataType>Byte</DataType>
+            <IsRORecordFlag>1</IsRORecordFlag>
+          </PropertyAttributes>
+        </Property>
+        <Property Name="MasterType" Key="2" Binding="BOUND" Sequence="13">
+          <PseudoKeyFlag>0</PseudoKeyFlag>
+          <BoundToColumn>MasterType</BoundToColumn>
+          <ColumnTableAlias>obj</ColumnTableAlias>
+          <PropertyAttributes>
+            <ColumnDataType>nvarchar</ColumnDataType>
+            <DataLength>1</DataLength>
+            <DataType>String</DataType>
+            <IsRequired>1</IsRequired>
+          </PropertyAttributes>
+        </Property>
+        <Property Name="NoteExistsFlag" Key="0" Binding="BOUND" Sequence="6">
+          <PseudoKeyFlag>0</PseudoKeyFlag>
+          <BoundToColumn>NoteExistsFlag</BoundToColumn>
+          <ColumnTableAlias>obj</ColumnTableAlias>
+          <PropertyAttributes>
+            <ColumnDataType>FlagNyType</ColumnDataType>
+            <DataType>Byte</DataType>
+          </PropertyAttributes>
+        </Property>
+        <Property Name="ObjectName" Key="4" Binding="BOUND" Sequence="9">
+          <PseudoKeyFlag>0</PseudoKeyFlag>
+          <BoundToColumn>ObjectName</BoundToColumn>
+          <ColumnTableAlias>obj</ColumnTableAlias>
+          <PropertyAttributes>
+            <ColumnDataType>ObjectNameType</ColumnDataType>
+            <DataLength>128</DataLength>
+            <DataType>String</DataType>
+            <IsRequired>1</IsRequired>
+          </PropertyAttributes>
+        </Property>
+        <Property Name="ObjectType" Key="3" Binding="BOUND" Sequence="10">
+          <PseudoKeyFlag>0</PseudoKeyFlag>
+          <BoundToColumn>ObjectType</BoundToColumn>
+          <ColumnTableAlias>obj</ColumnTableAlias>
+          <PropertyAttributes>
+            <ColumnDataType>ObjectNameType</ColumnDataType>
+            <DataLength>128</DataLength>
+            <DataType>String</DataType>
+            <IsRequired>1</IsRequired>
+          </PropertyAttributes>
+        </Property>
+        <Property Name="OwnedBy" Key="0" Binding="BOUND" Sequence="8">
+          <PseudoKeyFlag>0</PseudoKeyFlag>
+          <BoundToColumn>OwnedBy</BoundToColumn>
+          <ColumnTableAlias>obj</ColumnTableAlias>
+          <PropertyAttributes>
+            <ColumnDataType>UsernameType</ColumnDataType>
+            <DataLength>128</DataLength>
+            <DataType>String</DataType>
+          </PropertyAttributes>
+        </Property>
+        <Property Name="Project" Key="1" Binding="BOUND" Sequence="11">
+          <PseudoKeyFlag>0</PseudoKeyFlag>
+          <BoundToColumn>Project</BoundToColumn>
+          <ColumnTableAlias>obj</ColumnTableAlias>
+          <PropertyAttributes>
+            <ColumnDataType>nvarchar</ColumnDataType>
+            <DataLength>128</DataLength>
+            <DataType>String</DataType>
+            <IsRequired>1</IsRequired>
+          </PropertyAttributes>
+        </Property>
+        <Property Name="RecordDate" Key="0" Binding="BOUND" Sequence="4">
+          <PseudoKeyFlag>0</PseudoKeyFlag>
+          <BoundToColumn>RecordDate</BoundToColumn>
+          <ColumnTableAlias>obj</ColumnTableAlias>
+          <PropertyAttributes>
+            <ColumnDataType>CurrentDateType</ColumnDataType>
+            <DataType>Date</DataType>
+            <IsReadOnly>1</IsReadOnly>
+          </PropertyAttributes>
+        </Property>
+        <Property Name="RowPointer" Key="0" Binding="BOUND" Sequence="5">
+          <PseudoKeyFlag>0</PseudoKeyFlag>
+          <BoundToColumn>RowPointer</BoundToColumn>
+          <ColumnTableAlias>obj</ColumnTableAlias>
+          <PropertyAttributes>
+            <ColumnDataType>RowPointerType</ColumnDataType>
+            <DataType>GUID</DataType>
+            <IsReadOnly>1</IsReadOnly>
+          </PropertyAttributes>
+        </Property>
+        <Property Name="SchemaName" Key="0" Binding="BOUND" Sequence="12">
+          <PseudoKeyFlag>0</PseudoKeyFlag>
+          <BoundToColumn>SchemaName</BoundToColumn>
+          <ColumnTableAlias>obj</ColumnTableAlias>
+          <PropertyAttributes>
+            <ColumnDataType>ObjectNameType</ColumnDataType>
+            <DataLength>128</DataLength>
+            <DataType>String</DataType>
+          </PropertyAttributes>
+        </Property>
+        <Property Name="UpdatedBy" Key="0" Binding="BOUND" Sequence="2">
+          <PseudoKeyFlag>0</PseudoKeyFlag>
+          <BoundToColumn>UpdatedBy</BoundToColumn>
+          <ColumnTableAlias>obj</ColumnTableAlias>
+          <PropertyAttributes>
+            <ColumnDataType>UsernameType</ColumnDataType>
+            <DataLength>128</DataLength>
+            <DataType>String</DataType>
+            <IsReadOnly>1</IsReadOnly>
+          </PropertyAttributes>
+        </Property>
+      </Properties>
+      <Rules />
+    </IDODefinition>
+  </IDODefinitions>
+</ObjectStudioExport>
