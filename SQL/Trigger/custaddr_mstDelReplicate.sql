@@ -1,1 +1,0 @@
-﻿DROP TRIGGER [dbo].[custaddr_mstDelReplicate];
