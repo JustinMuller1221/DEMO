@@ -1,0 +1,1 @@
+﻿ALTER TABLE [dbo].[co_mst] ADD [VDG_SM_NewColumn] FlagNyType NOT NULL DEFAULT ((0));
