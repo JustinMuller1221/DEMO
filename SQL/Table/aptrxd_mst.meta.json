@@ -5,9 +5,9 @@
   },
   "subObjects": [
     {
-      "objectType": "Trigger",
-      "name": "[dbo].[aptrxd_mstInsert]",
-      "filePath": "SQL/Trigger/aptrxd_mstInsert.sql"
+      "objectType": "Index",
+      "name": "[dbo].[aptrxd_mst]",
+      "filePath": "SQL/Index/aptrxd_mst.sql"
     }
   ]
 }
