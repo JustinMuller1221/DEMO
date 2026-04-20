@@ -1,0 +1,1 @@
+﻿ALTER TABLE [dbo].[aptrx_mst] DROP CONSTRAINT [DF__aptrx_mst__VDG_S__731E3703];
