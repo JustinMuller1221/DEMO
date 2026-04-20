@@ -61,6 +61,7 @@ AS
       , [ZITsub_ledger_nr_dau]
       , [ZITvend_num_dau]
       , [ZITvouch_seq]
+      , [VDG_SM_AnotherTest]
       )
    SELECT
       bt.[site_ref]
@@ -106,6 +107,7 @@ AS
       , bt.[ZITsub_ledger_nr_dau]
       , bt.[ZITvend_num_dau]
       , bt.[ZITvouch_seq]
+      , bt.[VDG_SM_AnotherTest]
    FROM inserted bt WITH (READUNCOMMITTED)
 
    -- The AFTER INSERT Triggers fire now, in the following order:

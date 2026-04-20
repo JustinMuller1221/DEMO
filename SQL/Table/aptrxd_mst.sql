@@ -43,6 +43,7 @@
     [ZITsub_ledger_nr_dau] ZITSubsidiaryLedgerNrType NULL,
     [ZITvend_num_dau] VendNumType NULL,
     [ZITvouch_seq] VouchSeqType NULL,
+    [VDG_SM_AnotherTest] FlagNyType NOT NULL,
     CONSTRAINT [IX_aptrxd_mst_RowPointer] UNIQUE NONCLUSTERED ([RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90, DATA_COMPRESSION = PAGE) ON [SitePScheme],
     CONSTRAINT [PK_aptrxd_mst] PRIMARY KEY CLUSTERED ([vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [dist_seq] ASC, [dist_seq] ASC, [dist_seq] ASC, [dist_seq] ASC, [dist_seq] ASC, [dist_seq] ASC, [dist_seq] ASC, [dist_seq] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90, DATA_COMPRESSION = PAGE) ON [SitePScheme]
 ) ON [SitePScheme]
@@ -79,6 +80,8 @@ ALTER TABLE [dbo].[aptrxd_mst] ADD CONSTRAINT [DF_aptrxd_mst_MX_vat_compliant] D
 ALTER TABLE [dbo].[aptrxd_mst] ADD CONSTRAINT [DF_aptrxd_mst_MX_vat_eligible] DEFAULT ((0)) FOR [MX_vat_eligible];
 
 ALTER TABLE [dbo].[aptrxd_mst] ADD CONSTRAINT [DF_aptrxd_mst_ZITvouch_seq] DEFAULT ((0)) FOR [ZITvouch_seq];
+
+ALTER TABLE [dbo].[aptrxd_mst] ADD CONSTRAINT [DF_aptrxd_mst_VDG_SM_AnotherTest] DEFAULT ((0)) FOR [VDG_SM_AnotherTest];
 
 ALTER TABLE [dbo].[aptrxd_mst] ADD CONSTRAINT [CK_aptrxd_mst_MX_vat_compliant] CHECK ([MX_vat_compliant]=(1) OR [MX_vat_compliant]=(0));
 
