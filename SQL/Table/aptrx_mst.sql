@@ -128,6 +128,7 @@
     [PL_ksef_id] PLKSeFIdType NULL,
     [VDG_SM_TestNew] FlagNyType NOT NULL,
     [VDG_SM_AnotherCol] FlagNyType NOT NULL,
+    [VDG_SM_AThirdOne] Flag NULL,
     CONSTRAINT [IX_aptrx_mst_RowPointer] UNIQUE NONCLUSTERED ([RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90, DATA_COMPRESSION = PAGE) ON [SitePScheme],
     CONSTRAINT [PK_aptrx_mst] PRIMARY KEY CLUSTERED ([vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90, DATA_COMPRESSION = PAGE) ON [SitePScheme]
 ) ON [SitePScheme]
@@ -244,6 +245,8 @@ ALTER TABLE [dbo].[aptrx_mst] ADD CONSTRAINT [DF_aptrx_mst_ZITwithhold_dom] DEFA
 ALTER TABLE [dbo].[aptrx_mst] ADD CONSTRAINT [DF_aptrx_mst_VDG_SM_TestNew] DEFAULT ((0)) FOR [VDG_SM_TestNew];
 
 ALTER TABLE [dbo].[aptrx_mst] ADD CONSTRAINT [DF_aptrx_mst_VDG_SM_AnotherCol] DEFAULT ((0)) FOR [VDG_SM_AnotherCol];
+
+ALTER TABLE [dbo].[aptrx_mst] ADD CONSTRAINT [DF_aptrx_mst_VDG_SM_AThirdOne] DEFAULT ((0)) FOR [VDG_SM_AThirdOne];
 
 ALTER TABLE [dbo].[aptrx_mst] ADD CONSTRAINT [CK_aptrx_mst_auth_status] CHECK ([auth_status]=N'F' OR ([auth_status]=N'A' OR [auth_status]=N'M'));
 
