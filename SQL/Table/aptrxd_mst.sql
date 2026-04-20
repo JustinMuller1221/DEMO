@@ -91,6 +91,8 @@ CREATE NONCLUSTERED INDEX [aptrxd_mstIX1] ON [dbo].[aptrxd_mst] ([VDG_SM_Another
 
 CREATE NONCLUSTERED INDEX [aptrxd_mstIX2] ON [dbo].[aptrxd_mst] ([CreateDate] ASC) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, DATA_COMPRESSION = PAGE) ON [PRIMARY];
 
+CREATE NONCLUSTERED INDEX [aptrxd_mstIX3] ON [dbo].[aptrxd_mst] ([CreatedBy] ASC) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, DATA_COMPRESSION = PAGE) ON [PRIMARY];
+
 CREATE NONCLUSTERED INDEX [IX_aptrxd_mst_cost_code] ON [dbo].[aptrxd_mst] ([cost_code] ASC, [cost_code] ASC, [cost_code] ASC, [cost_code] ASC, [cost_code] ASC, [cost_code] ASC, [cost_code] ASC, [cost_code] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90, DATA_COMPRESSION = PAGE) ON [SitePScheme];
 
 CREATE NONCLUSTERED INDEX [IX_aptrxd_mst_proj_num] ON [dbo].[aptrxd_mst] ([proj_num] ASC, [proj_num] ASC, [proj_num] ASC, [proj_num] ASC, [proj_num] ASC, [proj_num] ASC, [proj_num] ASC, [proj_num] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90, DATA_COMPRESSION = PAGE) ON [SitePScheme];
