@@ -145,6 +145,7 @@ AS
       , [PL_ksef_indicator]
       , [PL_ksef_id]
       , [VDG_SM_TestNew]
+      , [VDG_SM_AnotherCol]
       )
    SELECT
       bt.[site_ref]
@@ -274,6 +275,7 @@ AS
       , bt.[PL_ksef_indicator]
       , bt.[PL_ksef_id]
       , bt.[VDG_SM_TestNew]
+      , bt.[VDG_SM_AnotherCol]
    FROM inserted bt WITH (READUNCOMMITTED)
 
    -- The AFTER INSERT Triggers fire now, in the following order:
