@@ -1,0 +1,1 @@
+﻿ALTER TABLE [dbo].[custaddr_mst] ADD [TestingNewColumn] int NOT NULL DEFAULT ((0));

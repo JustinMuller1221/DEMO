@@ -1,0 +1,1 @@
+﻿EXEC sp_settriggerorder @triggername=N'[dbo].[custaddr_mstIup]', @order=N'First', @stmttype=N'UPDATE'
