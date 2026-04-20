@@ -1,0 +1,13 @@
+﻿{
+  "parentObject": {
+    "objectType": "Table",
+    "name": "[dbo].[aptrxd_mst]"
+  },
+  "subObjects": [
+    {
+      "objectType": "Trigger",
+      "name": "[dbo].[aptrxd_mstInsert]",
+      "filePath": "SQL/Trigger/aptrxd_mstInsert.sql"
+    }
+  ]
+}
