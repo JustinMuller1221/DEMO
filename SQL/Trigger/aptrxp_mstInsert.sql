@@ -188,6 +188,7 @@ AS
       , [gold1099_reportable]
       , [PL_ksef_indicator]
       , [PL_ksef_id]
+      , [VDG_SM_AnotherTest]
       )
    SELECT
       bt.[site_ref]
@@ -360,6 +361,7 @@ AS
       , bt.[gold1099_reportable]
       , bt.[PL_ksef_indicator]
       , bt.[PL_ksef_id]
+      , bt.[VDG_SM_AnotherTest]
    FROM inserted bt WITH (READUNCOMMITTED)
 
    -- The AFTER INSERT Triggers fire now, in the following order:

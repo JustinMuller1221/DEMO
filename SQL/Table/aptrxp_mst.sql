@@ -170,6 +170,7 @@
     [gold1099_reportable] ListYesNoType NOT NULL,
     [PL_ksef_indicator] PLKSeFIndicatorType NULL,
     [PL_ksef_id] PLKSeFIdType NULL,
+    [VDG_SM_AnotherTest] FlagNyType NOT NULL,
     CONSTRAINT [IX_aptrxp_mst] UNIQUE CLUSTERED ([vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [vouch_seq] ASC, [vouch_seq] ASC, [vouch_seq] ASC, [vouch_seq] ASC, [vouch_seq] ASC, [vouch_seq] ASC, [vouch_seq] ASC, [vouch_seq] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90, DATA_COMPRESSION = PAGE) ON [SitePScheme],
     CONSTRAINT [IX_aptrxp_mst_active] UNIQUE NONCLUSTERED ([active] ASC, [active] ASC, [active] ASC, [active] ASC, [active] ASC, [active] ASC, [active] ASC, [active] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [vend_num] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [voucher] ASC, [vouch_seq] ASC, [vouch_seq] ASC, [vouch_seq] ASC, [vouch_seq] ASC, [vouch_seq] ASC, [vouch_seq] ASC, [vouch_seq] ASC, [vouch_seq] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90, DATA_COMPRESSION = PAGE) ON [SitePScheme],
     CONSTRAINT [PK_aptrxp_mst] PRIMARY KEY NONCLUSTERED ([RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [RowPointer] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC, [site_ref] ASC) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90, DATA_COMPRESSION = PAGE) ON [SitePScheme]
@@ -323,6 +324,8 @@ ALTER TABLE [dbo].[aptrxp_mst] ADD CONSTRAINT [DF_aptrxp_mst_ZITwithhold_amt] DE
 ALTER TABLE [dbo].[aptrxp_mst] ADD CONSTRAINT [DF_aptrxp_mst_ZITwithhold_dom] DEFAULT ((0)) FOR [ZITwithhold_dom];
 
 ALTER TABLE [dbo].[aptrxp_mst] ADD CONSTRAINT [DF_aptrxp_mst_gold1099_reportable] DEFAULT ((0)) FOR [gold1099_reportable];
+
+ALTER TABLE [dbo].[aptrxp_mst] ADD CONSTRAINT [DF_aptrxp_mst_VDG_SM_AnotherTest] DEFAULT ((0)) FOR [VDG_SM_AnotherTest];
 
 ALTER TABLE [dbo].[aptrxp_mst] ADD CONSTRAINT [CK_aptrxp_mst_active] CHECK ([active]=(0) OR [active]=(1));
 
@@ -769,6 +772,7 @@ AS
       , [gold1099_reportable]
       , [PL_ksef_indicator]
       , [PL_ksef_id]
+      , [VDG_SM_AnotherTest]
       )
    SELECT
       bt.[site_ref]
@@ -941,6 +945,7 @@ AS
       , bt.[gold1099_reportable]
       , bt.[PL_ksef_indicator]
       , bt.[PL_ksef_id]
+      , bt.[VDG_SM_AnotherTest]
    FROM inserted bt WITH (READUNCOMMITTED)
 
    -- The AFTER INSERT Triggers fire now, in the following order:
